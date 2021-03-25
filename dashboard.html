@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
+    <!-- Icons Bootstrap5 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css" />
+    <!-- My CSS -->
+    <link rel="stylesheet" href="admin.css" />
+
+    <title>Halaman Admin</title>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">SELAMAT DATANG ADMIN | <b>UM</b></a>
+        <form class="d-flex ms-auto">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+        <!-- Icon Bootstrap 5-->
+        <div class="icon ms-4">
+          <h5>
+            <!-- data-bs-toggle="tooltip" data-bs-placement="top" title="title" (ini semua adalah tooltip) -->
+            <i class="bi bi-envelope-fill me-3" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Surat Masuk"></i>
+            <i class="bi bi-bell-fill me-3" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Notifikasi"></i>
+            <i class="bi bi-box-arrow-right me-3" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Sign Out"></i>
+          </h5>
+        </div>
+      </div>
+    </nav>
+    <!-- Akhir Navbar -->
+
+    <!-- konten-->
+    <!-- no-gutters (agar tidak ada jarak antara column didalam row) -->
+    <!-- mt-5 (agar menu tidak tertutup navbar) -->
+    <div class="row no-gutters mt-5">
+      <!-- column menu navs vertical -->
+      <div class="col-md-2 bg-dark mt-2 pe-3 pt-4">
+        <ul class="nav flex-column ms-3 mb-5">
+          <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="dashboard.html"><i class="bi bi-speedometer me-2"></i> Dashboard</a>
+            <hr class="bg-secondary" />
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="mahasiswa.html"><i class="bi bi-person-lines-fill me-2"></i> Daftar Mahasiswa</a>
+            <hr class="bg-secondary" />
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="dosen.html"><i class="bi bi-command me-2"></i> Daftar Dosen</a>
+            <hr class="bg-secondary" />
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="pegawai.html"><i class="bi bi-type-strikethrough me-2"></i> Daftar Pegawai </a>
+            <hr class="bg-secondary" />
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="jadwal.html"><i class="bi bi-calendar-check-fill me-2"></i> Jadwal Kuliah </a>
+            <hr class="bg-secondary" />
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="nilai.html"><i class="bi bi-emoji-smile-fill me-2"></i> Nilai Mahasiswa </a>
+            <hr class="bg-secondary" />
+          </li>
+        </ul>
+      </div>
+      <!-- akhir column menu navs vertical -->
+      <!-- konten utama -->
+      <div class="col-md-10 p-5 p-2">
+        <h3><i class="bi bi-speedometer me-2"></i> DASHBOARD<hr>
+          <!-- didalam column bisa diisi row lagi -->
+          <!-- didalam column ada 1row, jadi card akan nambah kesamping (nambah didalam 1row) -->
+          <div class="row text-white">
+            <div class="card bg-info ms-5" style="width: 18rem;">
+              <div class="card-body">
+                <!-- ini class agar icon jadi background card pakai my css -->
+                <div class="card-body-icon">
+                  <i class="bi bi-person-lines-fill me-2"></i>
+                </div>
+                <h5 class="card-title">JUMLAH MAHASISWA</h5>
+                <div class="display-4">1.200</div>
+                <a href="#"><p class="card-text text-white fs-6">Lihat Detail <i class="bi bi-arrow-right-short me-2"></i></p></a>
+              </div>
+            </div>
+
+            <div class="card bg-success ms-5" style="width: 18rem;">
+              <div class="card-body">
+                <!-- ini class agar icon jadi background card pakai my css -->
+                <div class="card-body-icon">
+                  <i class="bi bi-command me-2"></i>
+                </div>
+                <h5 class="card-title">JUMLAH DOSEN</h5>
+                <div class="display-4">58</div>
+                <a href="#"><p class="card-text text-white fs-6">Lihat Detail <i class="bi bi-arrow-right-short me-2"></i></p></a>
+              </div>
+            </div>
+
+            <div class="card bg-danger ms-5" style="width: 18rem;">
+              <div class="card-body">
+                <!-- ini class agar icon jadi background card pakai my css -->
+                <div class="card-body-icon">
+                  <i class="bi bi-type-strikethrough me-2"></i>
+                </div>
+                <h5 class="card-title">JUMLAH PEGAWAI</h5>
+                <div class="display-4">21</div>
+                <a href="#"><p class="card-text text-white fs-6">Lihat Detail <i class="bi bi-arrow-right-short me-2"></i></p></a>
+              </div>
+            </div>
+          </div>  
+      </div>
+      <!-- akhir konten utama -->
+    </div>
+    <!-- akhir konten -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <!-- My JS -->
+    <script src="admin.js"></script>
+  </body>
+</html>
